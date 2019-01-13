@@ -1,0 +1,19 @@
+---
+
+- name: Install nonfree packages
+  apt_repository:
+    repo: deb http://httpredir.debian.org/debian/ {{ ansible_distribution_release }} main contrib non-free 
+    state: present
+
+- name: Install graphic card driver
+  apt:
+    state: latest
+    update_cache: yes
+    cache_valid_time: 43200
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - firmware-linux-nonfree 
+    - libgl1-mesa-dri 
+    - xserver-xorg-video-ati
+ 
