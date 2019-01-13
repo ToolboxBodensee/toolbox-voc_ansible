@@ -8,3 +8,13 @@ blackmagic:
     mediaexpress: https://xn--see-br-0xa.se/download/mediaexpress_3.5.7a5_amd64.deb
 
   dkms_version: 10.1.4a9
+
+# blackmagic card
+blackmagic_sources:
+ - card: 0
+   connection: SDI
+   audio: true
+#   mode: 18  # optional
+
+
+x: Hello World
