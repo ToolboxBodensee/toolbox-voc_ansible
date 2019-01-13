@@ -2,13 +2,32 @@
 
 - name: Apply common basic config on all hosts
   hosts: voc
-  tags: auth
+  tags: 
+   - auth
+   - base
   roles:
-    - ssh_authorized_keys
     - home_environment
     - base_packages
+  vars: 
+    - ansible_ssh_user: 'root'
+
+- name: Apply basic ssh config on all hosts
+  hosts: voc
+  tags: 
+   - auth
+   - ssh
+  roles:
+    - ssh_authorized_keys
     - sshd
   vars: 
     - ansible_ssh_user: 'root'
+
+- name: Install driver
+  hosts: voc
+  tags: 
+   - driver
+   - blackmagic
+  roles:
+    - blackmagic
 
 
