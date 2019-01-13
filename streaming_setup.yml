@@ -31,4 +31,12 @@
     - graphic
     - blackmagic
 
+- name: Install debugger
+  hosts: voc
+  tags: 
+   - debug
+   - blackmagic
+  roles:
+    - decklink-debugger
+
 

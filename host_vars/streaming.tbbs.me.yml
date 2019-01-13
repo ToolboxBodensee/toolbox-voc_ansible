@@ -9,6 +9,8 @@ blackmagic:
     mediaexpress: https://xn--see-br-0xa.se/download/mediaexpress_3.5.7a5_amd64.deb
   dkms_version: 10.1.4a9
 
+  sdk: https://xn--see-br-0xa.se/download/Blackmagic_DeckLink_SDK_10.11.4.zip 
+
 # blackmagic card
 blackmagic_sources:
  - card: 0
@@ -17,4 +19,4 @@ blackmagic_sources:
 #   mode: 18  # optional
 
 
-x: Hello World
+

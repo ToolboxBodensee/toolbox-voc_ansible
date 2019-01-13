@@ -16,3 +16,6 @@
 [submodule "roles/blackmagic"]
 	path = roles/blackmagic
 	url = https://gitea.see-base.de/toolbox/role_blackmagic.git
+[submodule "roles/decklink-debugger"]
+	path = roles/decklink-debugger
+	url = https://gitea.see-base.de/toolbox/role_decklink-debugger.git
