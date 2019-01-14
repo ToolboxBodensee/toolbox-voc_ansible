@@ -1,12 +1,12 @@
  Video Streaming - Ansible Setup
 ====================================
-Hier entsteht das ansible Setup für das VOC der [Toolbox](https://toolbox-bodensee.de).
+Ansible Setup for the VOC *(Video Operation Center)` from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de).
 
-Ansible ist ein Open-Source Werkzeug zur Automatisierung. [Weitere Infos](https://de.wikipedia.org/wiki/Ansible)
+Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs. [Weitere Infos](https://de.wikipedia.org/wiki/Ansible) | [Learn more](https://www.ansible.com/overview/how-ansible-works)
 
  Usage:
 -------
-Das git repository enthält so genannte Submodule. Um den vollen Umfang des Repos erfahren zu können, müssen diese mit geklont werden!
+This git repository contains git submodules. To see our complete setup you have to clone them too!
 ```
 # Clone the Git
 git clone https://github.com/ToolboxBodensee/toolbox-voc_ansible.git
