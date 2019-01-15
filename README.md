@@ -41,7 +41,75 @@ git submodule update --init --recursive
 | Camera | 1x MiniHDMI -> HDMI | HDMI Cable for Camecorder | L3D |
 | | | | |
 | Audio | 
+
 ### How is the Hardware connected?
 
+```
+                                                             |
+              ***************<*<*<*<*<*<*<*<*<*<*<*<*<*<*    |
+ .____________*______________<.___________________._____<____!
+ |            *              <|                   |     *    |
+ |            *              <|                   |     <    |
+ |    ........*.......       <|                   |  <*<*    |
+ |    :       *       `.     <|                   |  *       |
+ |    :       *        :     <|                   | [PC]     |
+ |    :       *       .´     <|                   |          |
+ |    :      * *    .´       <|                   !__!++++!__!    
+ |    :     *   *   :        <|                   |          |
+ |    :    *     *  :  [W!----!_______!----!______!        __!
+ |    :  [V²]     * :  [M|<<<< 
+ |    :     [B]    *:   <|
+ |    :             [V] <|    ________      __________________.
+ |    :           <<:<<<<!----!       !----!                  |
+ |    :           < :         |                               |
+ |    :           < :         |                               |
+ |    :           < :         |                               |
+ |    : <<<<<<<<<<< :         |                               |
+ |    :<............:         |                               |
+ | [S]<                       |  (Holzwerkstatt der Toolbox)  |
+ |                            |                               |
+ |[L] ====[screen]==== [L]    |                               |
+ !____________________________!_______________________________!
 
 
+ legend:
+
+ [L] -> loudspeaker
+
+ [B] -> Beamer
+ 
+ [S] -> Speaker withe headset microfon
+
+ [M] -> audio mixer
+
+ [PC] -> Streaming Decoder PC
+
+ [V] -> video camera with microfon
+
+ [V²] -> 2. video camera (totale)
+
+ [W] -> wireless microfon (if not broken)
+
+ ==[screen]== -> Beamer screen
+
+ ....
+ :  : -> table
+ :..:
+|
+|
+| -> wall
+!_____
+
+!----! door (unlocked)
+
+!++++! door (locked) 
+
+ *
+ * -> Video cable
+ *
+
+ <
+ < -> audio cable
+ <
+
+```
