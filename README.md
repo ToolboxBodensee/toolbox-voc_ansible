@@ -28,17 +28,17 @@ git submodule update --init --recursive
 
 | Place    | Hardware | Function | Owner |
 | -------- | ---------| -------- | ----- |
-| streaming.tbbs.me | Tower-PC       | main computer to mix, encode, record and stream talks | Toolbox (gift from Michi K.) |
-| streaming.tbbs.me | Decklink Duo 2 | PCI SDI-IN Card for live revording | L3D (soon Toolbox) |
-| streaming.tbbs.me | Radeon HD 5850 | Graphic Card | Toolbox (gift from L3D) |
-| streaming.tbbs.me | SSD with 250G  | fast Storage for OS and daily videos | L3D |
-| | 2x blackmagic HDMI -> SDI | transform signal from HDMI to SDI | L3D (soon Toolbox) |
-| | 3x 25m SDI cable | transport video from ruum42 to NOC | L3D (soon Toolbox) |
-| | 1x HDMI -> SDI | cheap HDMI -> SDI converter | L3D (soon Toolbox) [!NOT ARRIVED] |
+| streaming.tbbs.me | Tower-PC       | Main computer to mix, encode, record and stream talks | Toolbox (gift from Michi K.) |
+| streaming.tbbs.me | Decklink Duo 2 | PCI SDI-IN Card for live recording | L3D (soon Toolbox) |
+| streaming.tbbs.me | Radeon HD 5850 | Graphics Card | Toolbox (gift from L3D) |
+| streaming.tbbs.me | SSD with 250G  | Fast Storage for OS and daily videos | L3D |
+| | 2x blackmagic HDMI -> SDI | Transform signal from HDMI to SDI | L3D (soon Toolbox) |
+| | 3x 25m SDI cable | Transport video from ruum42 to NOC | L3D (soon Toolbox) |
+| | 1x HDMI -> SDI | Cheap HDMI -> SDI converter | L3D (soon Toolbox) [!NOT ARRIVED] |
 | | | | |
-| Camera | 1x Panasonic HC X909 | Camecorder for life output | L3D |
-| Camera | 1x power (9.8V) | Power for Camecorder | L3D |
-| Camera | 1x MiniHDMI -> HDMI | HDMI Cable for Camecorder | L3D |
+| Camera | 1x Panasonic HC X909 | Camcorder for live output | L3D |
+| Camera | 1x power (9.8V) | Power for Camcorder | L3D |
+| Camera | 1x MiniHDMI -> HDMI | HDMI Cable for Camcorder | L3D |
 | | | | |
 | Audio | 
 
@@ -74,44 +74,44 @@ git submodule update --init --recursive
 
  legend:
 
- [L] -> loudspeaker
+ [L] -> Speaker
 
  [B] -> Beamer
  
- [S] -> Speaker withe headset microfon
+ [S] -> Speaker with headset microphone
 
- [M] -> audio mixer
+ [M] -> Audio mixer
 
  [PC] -> Streaming Decoder PC
 
- [V] -> video camera with microfon
+ [V] -> Video camera with microphone
 
- [V²] -> 2. video camera (totale)
+ [V²] -> 2. video camera (total)
 
- [W] -> wireless microfon (if not broken)
+ [W] -> Wireless microphone (if not broken)
 
  [SL] -> Speaker Laptop (Video & Audio)
 
  ==[screen]== -> Beamer screen
 
  ....
- :  : -> table
+ :  : -> Table
  :..:
 |
 |
-| -> wall
+| -> Wall
 !_____
 
-!----! door (unlocked)
+!----! Door (unlocked)
 
-!++++! door (locked) 
+!++++! Door (locked) 
 
  *
  * -> Video cable
  *
 
  <
- < -> audio cable
+ < -> Audio cable
  <
 
 ```
