@@ -55,4 +55,14 @@
   roles:
     - obs-studio
 
+- name: Install Toolbox font
+  hosts: voc
+  tags: 
+   - font
+   - fonts
+   - obs
+  roles:
+    - fonts
+
+
 

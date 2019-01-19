@@ -25,3 +25,6 @@
 [submodule "roles/obs-studio"]
 	path = roles/obs-studio
 	url = https://github.com/DO1JLR/role_obs-studio.git
+[submodule "roles/fonts"]
+	path = roles/fonts
+	url = https://github.com/ontic/ansible-role-fonts.git

@@ -7,6 +7,8 @@ Ansible is a radically simple IT automation engine that automates cloud provisio
  Usage:
 -------
 This git repository contains git submodules. To see our complete setup you have to clone them too!
+You need [git-lfs](https://git-lfs.github.com/) to clone all parts of this repository!
+
 ```
 # Clone the Git
 git clone https://github.com/ToolboxBodensee/toolbox-voc_ansible.git
