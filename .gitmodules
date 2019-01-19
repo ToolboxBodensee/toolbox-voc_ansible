@@ -19,3 +19,9 @@
 [submodule "roles/decklink-debugger"]
 	path = roles/decklink-debugger
 	url = https://gitea.see-base.de/toolbox/role_decklink-debugger.git
+[submodule "roles/voctomix"]
+	path = roles/voctomix
+	url = https://gitea.see-base.de/toolbox/role_install_voctomix.git
+[submodule "roles/obs-studio"]
+	path = roles/obs-studio
+	url = https://github.com/DO1JLR/role_obs-studio.git
