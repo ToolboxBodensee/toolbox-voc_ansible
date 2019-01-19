@@ -47,4 +47,12 @@
   roles:
     - voctomix
 
+- name: Install obs-studio
+  hosts: voc
+  tags: 
+   - stream
+   - obs
+  roles:
+    - obs-studio
+
 
