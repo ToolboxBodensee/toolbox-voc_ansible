@@ -1,5 +1,16 @@
 ---
 
+- name: Apply basic ssh config on all hosts
+  hosts: voc
+  tags: 
+   - auth
+   - ssh
+  roles:
+    - ssh_authorized_keys
+    - sshd
+  vars: 
+    - ansible_ssh_user: 'root'
+
 - name: Apply common basic config on all hosts
   hosts: voc
   tags: 
@@ -11,16 +22,6 @@
   vars: 
     - ansible_ssh_user: 'root'
 
-- name: Apply basic ssh config on all hosts
-  hosts: voc
-  tags: 
-   - auth
-   - ssh
-  roles:
-    - ssh_authorized_keys
-    - sshd
-  vars: 
-    - ansible_ssh_user: 'root'
 
 - name: Install video drivers
   hosts: voc
