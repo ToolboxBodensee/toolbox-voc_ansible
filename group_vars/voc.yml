@@ -7,7 +7,10 @@ admins:
 users:
   l3d:
     - l3d
+  toolbox:
+    - l3d
 
+obs_user: toolbox
 
 # Font
 fonts_shared:

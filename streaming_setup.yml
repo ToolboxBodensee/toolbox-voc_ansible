@@ -55,6 +55,14 @@
   roles:
     - obs-studio
 
+- name: Install obs-studio setup
+  hosts: voc
+  tags: 
+   - stream
+   - obs
+  roles:
+    - toolbox-obs-setup
+
 - name: Install Toolbox font
   hosts: voc
   tags: 

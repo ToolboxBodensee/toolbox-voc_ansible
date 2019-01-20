@@ -1,0 +1,46 @@
+---
+
+- name: create toolbox obs config directory
+  file:
+    path: /home/{{ obs_user }}/.config
+    state: directory
+    mode: 0755  
+- file:
+    path: /home/{{ obs_user }}/.config/obs-studio
+    state: directory
+    mode: 0755 file:
+- path: /home/{{ obs_user }}/.config/obs-studio/basic
+    state: directory
+    mode: 0755
+
+- name: clone obs toolbox config
+  git:
+    repo: https://github.com/ToolboxBodensee/obs-config.git  
+    dest: /home/{{ obs_user }}/.config/obs-studio/basic
+    update: yes
+    clone: yes
+
+- name: create toolbox obs data directory
+  file:
+    path: /srv/stream
+    state: directory
+    mode: 0755  
+- file:
+    path: /srv/stream/toolbox
+    state: directory
+    mode: 0755 file:
+- path: /srv/stream/toolbox/streamassets
+    state: directory
+    mode: 0755
+
+- name: clone obs toolbox config
+  git:
+    repo: https://github.com/ToolboxBodensee/streamassets.git
+    dest: /srv/stream/toolbox/streamassets
+    update: yes
+    clone: yes
+
+
+
+
+
