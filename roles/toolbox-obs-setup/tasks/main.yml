@@ -8,8 +8,9 @@
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio
     state: directory
-    mode: 0755 file:
-- path: /home/{{ obs_user }}/.config/obs-studio/basic
+    mode: 0755 
+- file:
+    path: /home/{{ obs_user }}/.config/obs-studio/basic
     state: directory
     mode: 0755
 
@@ -28,8 +29,9 @@
 - file:
     path: /srv/stream/toolbox
     state: directory
-    mode: 0755 file:
-- path: /srv/stream/toolbox/streamassets
+    mode: 0755
+- file:
+    path: /srv/stream/toolbox/streamassets
     state: directory
     mode: 0755
 
