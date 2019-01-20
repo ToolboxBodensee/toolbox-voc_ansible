@@ -60,7 +60,7 @@
   hosts: voc
   tags: 
    - stream
-   - obs
+   - obs-setup
   roles:
     - toolbox-obs-setup
 

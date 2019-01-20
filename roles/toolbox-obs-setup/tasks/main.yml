@@ -4,15 +4,21 @@
   file:
     path: /home/{{ obs_user }}/.config
     state: directory
-    mode: 0755  
+    mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"  
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio
     state: directory
-    mode: 0755 
+    mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}" 
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio/basic
     state: directory
     mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"
 
 - name: clone obs toolbox config
   git:
@@ -21,19 +27,32 @@
     update: yes
     clone: yes
 
+- file:
+    path: /home/{{ obs_user }}/.config/obs-studio/basic
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"
+    recurse: true
+
 - name: create toolbox obs data directory
   file:
     path: /srv/stream
     state: directory
-    mode: 0755  
+    mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"  
 - file:
     path: /srv/stream/toolbox
     state: directory
     mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"
+
 - file:
     path: /srv/stream/toolbox/streamassets
     state: directory
-    mode: 0755
+    owner: "{{ obs_user }}"
+    group: "{{ obs_user }}"
+    recurse: yes
 
 - name: clone obs toolbox config
   git:
