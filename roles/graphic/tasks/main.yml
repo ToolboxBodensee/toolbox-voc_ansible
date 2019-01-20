@@ -16,4 +16,16 @@
     - firmware-linux-nonfree 
     - libgl1-mesa-dri 
     - xserver-xorg-video-ati
- 
+  when: nvidia_gpu == false
+
+- name: Install graphic card driver
+  apt:
+    state: latest
+    update_cache: yes
+    cache_valid_time: 43200
+    name: "{{ packages }}"
+  vars:
+    packages:
+    - linux-headers-amd64
+    - nvidia-driver
+  when: nvidia_gpu 

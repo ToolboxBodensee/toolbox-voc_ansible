@@ -1,5 +1,7 @@
 ---
 
+nvidia_gpu: false
+
 # blackmagic drivers
 blackmagic:
   urls:
@@ -10,7 +12,7 @@ blackmagic:
   dkms_version: 10.1.4a9
 
   sdk: https://xn--see-br-0xa.se/download/Blackmagic_DeckLink_SDK_10.11.4.zip 
-
+  sdk_number: "10.11.4"
 # blackmagic card
 blackmagic_sources:
  - card: 0
