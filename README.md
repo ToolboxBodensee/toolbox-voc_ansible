@@ -29,5 +29,5 @@ git submodule update --init --recursive
 We will say how we build our streaming setup in the wiki at [tbbs.me/streaming](https://tbbs.me/doku.php?id=streaming:start).
 We also have an short overview with what Hardware is how connected in this git.
 
-![connect.svg(connect.svg "Toolbox VOC")
+![connect.svg](connect.svg "Toolbox VOC")
 
