@@ -28,3 +28,6 @@
 [submodule "roles/fonts"]
 	path = roles/fonts
 	url = https://github.com/ontic/ansible-role-fonts.git
+[submodule "roles/install-bat"]
+	path = roles/install-bat
+	url = https://github.com/aeimer/ansible-install-bat.git
