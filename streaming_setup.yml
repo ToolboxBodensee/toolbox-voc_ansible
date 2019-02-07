@@ -26,10 +26,11 @@
   hosts: voc
   tags: 
    - base
+   - base-special
   roles:
     - install-bat
+    - install-git-lfs
  
-
 - name: Install video drivers
   hosts: voc
   tags: 
