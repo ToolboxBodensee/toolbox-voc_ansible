@@ -31,9 +31,6 @@
 [submodule "roles/install-bat"]
 	path = roles/install-bat
 	url = https://github.com/aeimer/ansible-install-bat.git
-[submodule "roles/install-git-lfs"]
-	path = roles/install-git-lfs
-	url = https://github.com/BidMath/github-git-lfs.git
 [submodule "roles/firefox"]
 	path = roles/firefox
 	url = https://github.com/maxbachmann/role-firefox.git
