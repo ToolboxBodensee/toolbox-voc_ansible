@@ -30,7 +30,7 @@
 	url = https://github.com/ontic/ansible-role-fonts.git
 [submodule "roles/install-bat"]
 	path = roles/install-bat
-	url = https://github.com/aeimer/ansible-install-bat.git
+	url = https://github.com/gantsign/ansible_role_bat.git
 [submodule "roles/firefox"]
 	path = roles/firefox
 	url = https://github.com/maxbachmann/role-firefox.git

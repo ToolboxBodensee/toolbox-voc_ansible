@@ -26,6 +26,7 @@
     dest: /home/{{ obs_user }}/.config/obs-studio/basic
     update: yes
     clone: yes
+    force: yes
 
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio/basic
@@ -54,14 +55,18 @@
     group: "{{ obs_user }}"
     recurse: yes
 
-- name: clone obs toolbox config
+- name: clone obs toolbox media
   git:
     repo: https://github.com/ToolboxBodensee/streamassets.git
     dest: /srv/stream/toolbox/streamassets
     update: yes
     clone: yes
+    force: yes
 
-
+- name: git lfs pull toolbox media
+  command: git lfs pull
+  args:
+    chdir: /srv/stream/toolbox/streamassets
 
 
 
