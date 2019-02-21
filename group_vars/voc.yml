@@ -11,6 +11,7 @@ users:
     - l3d
 
 obs_user: toolbox
+username: toolbox
 
 # Font
 fonts_shared:

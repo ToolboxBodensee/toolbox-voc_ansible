@@ -12,6 +12,7 @@ You need [git-lfs](https://git-lfs.github.com/) to clone all parts of this repos
 ```
 # Clone the Git with submodules
 git clone --recursive https://github.com/ToolboxBodensee/toolbox-voc_ansible.git
+git submodule update --init --recursive
 ```
 
 
