@@ -1,7 +1,9 @@
 
 # Because Git-LFS repository use HTTPS, apt-transport-https package is necessary.
 - name: Install apt-transport-https
-  apt: name=apt-transport-https state=present
+  apt:
+    name: apt-transport-https
+    state: present
 
 - name: Add Git-LFS repository key
   apt_key:
@@ -17,5 +19,8 @@
     mode: 0644
 
 - name: Add git-lfs package
-  apt: name=git-lfs state=latest update_cache=yes
+  apt: 
+    name: git-lfs
+    state: latest 
+    update_cache: yes
 
