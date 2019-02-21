@@ -17,5 +17,5 @@
     mode: 0644
 
 - name: Add git-lfs package
-apt: name=git-lfs state=latest update_cache=yes
+  apt: name=git-lfs state=latest update_cache=yes
 
