@@ -1,19 +1,43 @@
 ---
 
-# Authentification:
+# Authentification and user management
+# For more information have a look into the sshd and ssh_authorised_keys roles
+
 admins:
   - l3d
 
 users:
   l3d:
-    - l3d
-  toolbox:
-    - l3d
+   - l3d@backup.l3d.yt
+   - l3d@derpy.l3d.yt
+   - l3d@mobile.l3d.yt
+   - l3d@pinkie.l3d.yt
+   - l3d@business.wingcon.com
+
+sshd_default_allowed_users:
+  - toolbox
+  - root
+  - l3d
+  - ansible
+
+sshd_default_allowed_groups:
+  - toolbox
+  - root
+  - l3d
+  - ansible
+
+accounts:
+  - l3d
+  - toolbox
+
+only_allow_ed25519: true
+# some variables for the voc specific playbooks
 
 obs_user: toolbox
 username: toolbox
 
-# Font
+
+# Font for the Toolbox
 fonts_shared:
   - type: 'truetype'
     src: 'files/Exo_2/Exo2-BlackItalic.ttf'
