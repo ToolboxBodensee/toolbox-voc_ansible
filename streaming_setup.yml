@@ -9,7 +9,7 @@
     - ssh_authorized_keys
     - sshd
   vars: 
-    - ansible_ssh_user: 'root'
+    - ansible_ssh_user: 'ansible'
 
 - name: Apply common basic config on all hosts
   hosts: voc
@@ -20,7 +20,7 @@
     - home_environment
     - base_packages
   vars: 
-    - ansible_ssh_user: 'root'
+    - ansible_ssh_user: 'ansible'
 
 - name: Install useful tools
   hosts: voc
