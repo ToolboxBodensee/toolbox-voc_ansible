@@ -31,6 +31,10 @@ accounts:
   - toolbox
 
 only_allow_ed25519: true
+
+ssh_public_key_store: 'admin_ssh_keys'
+
+
 # some variables for the voc specific playbooks
 
 obs_user: toolbox
