@@ -5,6 +5,9 @@
   tags: 
    - auth
    - ssh
+   - ssh_authorized_keys
+   - ssh-auth
+   - sshd
   roles:
     - ssh_authorized_keys
     - sshd
@@ -16,6 +19,8 @@
   tags: 
    - auth
    - base
+   - base_packages
+   - home_environment
   roles:
     - home_environment
     - base_packages
@@ -27,6 +32,8 @@
   tags: 
    - base
    - base-special
+   - install-git-lfs
+   - install-bat
   roles:
     - install-bat
     - install-git-lfs
@@ -36,7 +43,11 @@
   tags: 
    - driver
    - blackmagic
+   - base-voc
+   - voc_common
+   - graphic
   roles:
+    - voc_common
     - graphic
     - blackmagic
 
