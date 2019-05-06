@@ -18,7 +18,7 @@ git submodule update --init --recursive
 
  Playbooks:
 ------------
-+ ``streaming_setup.yml``: Setup voctocore ans obs on video encoder pc.
++ ``site.yml``: Setup voctocore ans obs on video encoder pc.
 
  Setup
 -------
