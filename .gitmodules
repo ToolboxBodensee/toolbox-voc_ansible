@@ -9,10 +9,10 @@
 	url = https://gitea.see-base.de/toolbox/ssh-public-keys.git
 [submodule "roles/home_environment"]
 	path = roles/home_environment
-	url = https://github.com/DO1JLR/role_dotfiles.git
+	url = https://github.com/chaos-bodensee/role_dotfiles.git
 [submodule "roles/sshd"]
 	path = roles/sshd
-	url = https://github.com/DO1JLR/role_sshd.git
+	url = https://github.com/chaos-bodensee/role_sshd.git
 [submodule "roles/blackmagic"]
 	path = roles/blackmagic
 	url = https://gitea.see-base.de/toolbox/role_blackmagic.git
