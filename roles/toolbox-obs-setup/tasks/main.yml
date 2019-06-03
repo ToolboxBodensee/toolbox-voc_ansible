@@ -1,5 +1,4 @@
 ---
-
 - name: create toolbox obs config directory
   file:
     path: /home/{{ obs_user }}/.config
@@ -7,22 +6,26 @@
     mode: 0755
     owner: "{{ obs_user }}"
     group: "{{ obs_user }}"  
+  become: true
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio
     state: directory
     mode: 0755
     owner: "{{ obs_user }}"
     group: "{{ obs_user }}" 
+  become: true
 - file:
     path: /home/{{ obs_user }}/.config/obs-studio/basic
     state: directory
     mode: 0755
     owner: "{{ obs_user }}"
     group: "{{ obs_user }}"
+  become: true
 
 - name: clone obs toolbox config
+  become: true
   git:
-    repo: https://github.com/ToolboxBodensee/obs-config.git  
+    repo: https://github.com/ToolboxBodensee/obs-config.git
     dest: /home/{{ obs_user }}/.config/obs-studio/basic
     update: yes
     clone: yes
@@ -33,6 +36,7 @@
     owner: "{{ obs_user }}"
     group: "{{ obs_user }}"
     recurse: true
+  become: true
 
 - name: create toolbox obs data directory
   file:
@@ -40,15 +44,19 @@
     state: directory
     mode: 0755
     owner: "{{ obs_user }}"
-    group: "{{ obs_user }}"  
+    group: "{{ obs_user }}"
+  become: true
 - file:
     path: /srv/stream/toolbox
     state: directory
     mode: 0755
     owner: "{{ obs_user }}"
     group: "{{ obs_user }}"
+  become: true
 
-- file:
+- name: create sreamassets dir
+  become: true
+  file:
     path: /srv/stream/toolbox/streamassets
     state: directory
     owner: "{{ obs_user }}"
@@ -56,17 +64,17 @@
     recurse: yes
 
 - name: clone obs toolbox media
+  become: true
   git:
     repo: https://github.com/ToolboxBodensee/streamassets.git
     dest: /srv/stream/toolbox/streamassets
     update: yes
     clone: yes
     force: yes
+    version: master
 
 - name: git lfs pull toolbox media
   command: git lfs pull
   args:
     chdir: /srv/stream/toolbox/streamassets
-
-
 
