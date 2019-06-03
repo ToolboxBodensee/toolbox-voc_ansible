@@ -9,5 +9,12 @@ Here are the things you have to prepare bevor running this Playbook:
    * You have the current debian version installed *(e.g. Debian 9)*.
    * You created the user ``ansible`` and allowed him to become root without asking for a password.
    * You are able to login as user ``ansible`` with your SSH Key.
+ * You have at least looked into the ``group_vars`` and ``host_vars``
+ * You have at leasted looked into ``ansible/hosts.ini``
+
+### Remeber:
+**If you need help...**
+ + Ask in ``#chvoc`` on ``irc.chaostreff.ch``
+ + Ask in the hackerspace [Toolbox](https://toolbox-bodensee.de/).
 
 

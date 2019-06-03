@@ -1,26 +1,25 @@
 ---
-
 - name: Install nonfree packages
   apt_repository:
-    repo: deb http://httpredir.debian.org/debian/ {{ ansible_distribution_release }} main contrib non-free 
+    repo: "deb http://httpredir.debian.org/debian/ {{ ansible_distribution_release }} main contrib non-free"
     state: present
 
 - name: Install graphic card driver
   apt:
-    state: latest
+    state: present
     update_cache: yes
     cache_valid_time: 43200
     name: "{{ packages }}"
   vars:
     packages:
-    - firmware-linux-nonfree 
-    - libgl1-mesa-dri 
+    - firmware-linux-nonfree
+    - libgl1-mesa-dri
     - xserver-xorg-video-ati
-  when: nvidia_gpu == false
+  when: not nvidia_gpu | bool
 
 - name: Install graphic card driver
   apt:
-    state: latest
+    state: present
     update_cache: yes
     cache_valid_time: 43200
     name: "{{ packages }}"
@@ -28,4 +27,4 @@
     packages:
     - linux-headers-amd64
     - nvidia-driver
-  when: nvidia_gpu 
+  when: nvidia_gpu | bool
