@@ -1,8 +1,8 @@
 ---
-
+# do we have a nvidia gpu?
 nvidia_gpu: false
 
-# blackmagic drivers
+# where are blackmagic drivers located?
 blackmagic:
   urls:
     desktopvideo: https://xn--see-br-0xa.se/download/desktopvideo_10.11.4a9_amd64.deb
