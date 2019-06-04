@@ -34,3 +34,6 @@
 [submodule "roles/voc_common"]
 	path = roles/voc_common
 	url = https://gitea.see-base.de/toolbox/voc_common_setup.git
+[submodule "roles/crs-tools"]
+	path = roles/crs-tools
+	url = https://github.com/chaos-bodensee/role_setup_crs_tools.git
