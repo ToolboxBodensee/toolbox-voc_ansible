@@ -1,7 +1,7 @@
 ---
 
 - name: Apply basic ssh config on all hosts
-  hosts: voc
+  hosts: decoder
   tags: 
    - auth
    - ssh
@@ -15,7 +15,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Apply common basic config on all hosts
-  hosts: voc
+  hosts: decoder
   tags: 
    - auth
    - base
@@ -28,7 +28,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Install useful tools
-  hosts: voc
+  hosts: decoder
   tags: 
    - base
    - base-special
@@ -39,36 +39,36 @@
     - install-git-lfs
  
 - name: Install video drivers
-  hosts: voc
+  hosts: decoder
   tags: 
    - driver
    - blackmagic
-   - base-voc
-   - voc_common
+   - base-decoder
+   - decoder_common
    - graphic
   roles:
-    - voc_common
+    - decoder_common
     - graphic
     - blackmagic
 
 - name: Install debugger
-  hosts: voc
+  hosts: decoder
   tags: 
    - debug
    - blackmagic
   roles:
     - decklink-debugger
 
-- name: Install voctomix
-  hosts: voc
+- name: Install decodertomix
+  hosts: decoder
   tags: 
    - stream
-   - voctomix
+   - decodertomix
   roles:
-    - voctomix
+    - decodertomix
 
 - name: Install obs-studio
-  hosts: voc
+  hosts: decoder
   tags: 
    - stream
    - obs
@@ -76,7 +76,7 @@
     - obs-studio
 
 - name: Install obs-studio setup
-  hosts: voc
+  hosts: decoder
   tags: 
    - stream
    - obs-setup
@@ -84,7 +84,7 @@
     - toolbox-obs-setup
 
 - name: Install Toolbox font
-  hosts: voc
+  hosts: decoder
   tags: 
    - font
    - fonts
@@ -93,7 +93,7 @@
     - fonts
  
 - name: Install firefox
-  hosts: voc
+  hosts: decoder
   tags: 
    - firefox
   roles:
