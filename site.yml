@@ -92,11 +92,12 @@
   roles:
     - fonts
  
-- name: Install firefox
+- name: Install crs-tools
   hosts: decoder
   tags: 
-   - firefox
+   - crs
+   - crs-tools
   roles:
-  #  - firefox
+  - crs-tools
 
 
