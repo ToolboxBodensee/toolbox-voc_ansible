@@ -35,3 +35,15 @@ If you want to use this setup outside of the Toolbox, you have to make sure you 
    - For Monitor (x1)
  + Monitor Cables
    - Several HDMI Cables, if available
+ + Audio Mischpult
+   - With Power Cable
+ + XLR Cable
+   - All cables!
+ + XLR Microfones
+   - At Least 2 of them, better all
+ + Wireless Microfone
+   - We do have one
+   - With Powercables
+ + Headset Microfone
+   - With Mini-XLR to XLR Adapter
+
