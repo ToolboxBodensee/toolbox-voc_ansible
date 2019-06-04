@@ -46,4 +46,10 @@ If you want to use this setup outside of the Toolbox, you have to make sure you 
    - With Powercables
  + Headset Microfone
    - With Mini-XLR to XLR Adapter
-
+ + Light
+   - If we have some!
+ + Ventylator
+   - optional, but helpful!
+ + Switch
+   + Ethernetswitch and Power
+   + Ethernet Cables
