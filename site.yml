@@ -44,10 +44,10 @@
    - driver
    - blackmagic
    - base-decoder
-   - decoder_common
+   - voc_common
    - graphic
   roles:
-    - decoder_common
+    - voc_common
     - graphic
     - blackmagic
 
@@ -59,13 +59,13 @@
   roles:
     - decklink-debugger
 
-- name: Install decodertomix
+- name: Install voctomix
   hosts: decoder
   tags: 
    - stream
-   - decodertomix
+   - voctomix
   roles:
-    - decodertomix
+    - voctomix
 
 - name: Install obs-studio
   hosts: decoder
