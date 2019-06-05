@@ -16,6 +16,12 @@ This is a overview how the Hardware is connected in the Toolbox:
 ![connect.svg](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/connect.svg "Toolbox VOC")
 
 
+ How dows our VOC Pipline look like?
+-----------------------------------------
+
+![signal_path.svg](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/signal_path.svg "Toolbox VOC")
+
+
 ### How to prepare the Hardware
  + [PREPERATION.md](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/PREPERATION.md)
  
