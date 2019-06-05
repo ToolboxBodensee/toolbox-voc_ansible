@@ -20,15 +20,8 @@ git submodule update --init --recursive
 ------------
 + ``site.yml``: Setup voctocore ans obs on video encoder pc.
 
- Setup
+ How does our Setup work?
 -------
-Here is a graphical overview how everything is connected in the toolbox:
+ + [overview/](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/README.md)
 
-![connect.svg](connect.svg "Toolbox VOC")
 
-### Hardware we Use
- + [INVENTORY.md](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/INVENTORY.md)
-
-### How to prepare the Hardware
- + [PREPERATION.md](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/PREPERATION.md)
- 
