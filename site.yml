@@ -1,7 +1,7 @@
 ---
 
 - name: Apply basic ssh config on all hosts
-  hosts: decoder
+  hosts: encoder
   tags: 
    - auth
    - ssh
@@ -15,7 +15,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Apply common basic config on all hosts
-  hosts: decoder
+  hosts: encoder
   tags: 
    - auth
    - base
@@ -28,7 +28,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Install useful tools
-  hosts: decoder
+  hosts: encoder
   tags: 
    - base
    - base-special
@@ -39,11 +39,11 @@
     - install-git-lfs
  
 - name: Install video drivers
-  hosts: decoder
+  hosts: encoder
   tags: 
    - driver
    - blackmagic
-   - base-decoder
+   - base-encoder
    - voc_common
    - graphic
   roles:
@@ -52,7 +52,7 @@
     - blackmagic
 
 - name: Install debugger
-  hosts: decoder
+  hosts: encoder
   tags: 
    - debug
    - blackmagic
@@ -60,7 +60,7 @@
     - decklink-debugger
 
 - name: Install voctomix
-  hosts: decoder
+  hosts: encoder
   tags: 
    - stream
    - voctomix
@@ -68,7 +68,7 @@
     - voctomix
 
 - name: Install obs-studio
-  hosts: decoder
+  hosts: encoder
   tags: 
    - stream
    - obs
@@ -76,7 +76,7 @@
     - obs-studio
 
 - name: Install obs-studio setup
-  hosts: decoder
+  hosts: encoder
   tags: 
    - stream
    - obs-setup
@@ -84,7 +84,7 @@
     - toolbox-obs-setup
 
 - name: Install Toolbox font
-  hosts: decoder
+  hosts: encoder
   tags: 
    - font
    - fonts
@@ -93,11 +93,21 @@
     - fonts
  
 - name: Install crs-tools
-  hosts: decoder
+  hosts: encoder
   tags: 
    - crs
    - crs-tools
   roles:
   - crs-tools
 
-
+- name: insall common voc_encoders stuff
+  hosts: encoder
+  tags:
+   - voc
+   - pipeline
+   - voc_encoders
+   - encode
+   - encoders
+   - encoder
+  roles:
+   - voc_encoders
