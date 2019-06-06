@@ -37,3 +37,6 @@
 [submodule "roles/crs-tools"]
 	path = roles/crs-tools
 	url = https://github.com/chaos-bodensee/role_setup_crs_tools.git
+[submodule "roles/voc_encoders"]
+	path = roles/voc_encoders
+	url = https://github.com/chaos-bodensee/role_voc_encoders.git
