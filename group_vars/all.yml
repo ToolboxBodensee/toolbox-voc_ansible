@@ -10,6 +10,7 @@ encodermode: 'hd-voctomix'
 # You probably don't want to modify these parameters unless you are
 # cloning our setup or add new users
 admins:
+  - raoul
   - l3d
 
 users:
@@ -19,22 +20,34 @@ users:
    - l3d@mobile.l3d.yt
    - l3d@pinkie.l3d.yt
    - l3d@business.wingcon.com
+  toolbox:
+   - l3d@backup.l3d.yt
+   - l3d@derpy.l3d.yt
+   - l3d@mobile.l3d.yt
+   - l3d@pinkie.l3d.yt
+   - l3d@business.wingcon.com
+   - raoul@ccczh
+  raoul:
+   - raoul@ccczh
 
 sshd_default_allowed_users:
   - toolbox
   - root
   - l3d
   - ansible
+  - raoul
 
 sshd_default_allowed_groups:
   - toolbox
   - root
   - l3d
   - ansible
+  - raoul
 
 accounts:
   - l3d
   - toolbox
+  - raoul
 
 only_allow_ed25519: true
 
