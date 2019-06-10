@@ -37,6 +37,21 @@
   roles:
     - install-bat
     - install-git-lfs
+
+- name: Install i3wm
+  hosts: encoder
+  tags: 
+   - base
+   - os
+   - i3wm
+   - i3
+   - arandr
+   - xrandr
+   - randr
+  roles:
+    - i3wm
+    - xrandr
+
  
 - name: Install video drivers
   hosts: encoder

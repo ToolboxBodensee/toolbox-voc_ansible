@@ -21,4 +21,18 @@ blackmagic_sources:
 #   mode: 18  # optional
 
 
-
+i3_monitors:
+  - monitor:
+    id: 1
+    output: "HDMI-0"
+    mode: "1920x1200"
+    pos: "0x0"
+    rotate: "normal"
+    workspaces: [1,2,3,4,5,6,7,8,9]
+  - monitor:
+    id: 2
+    output: "DVI-1"
+    mode: "1280x1024"
+    pos: "1920x0"
+    rotate: "left"
+    workspaces: [0]

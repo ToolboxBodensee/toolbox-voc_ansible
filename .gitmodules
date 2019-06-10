@@ -40,3 +40,9 @@
 [submodule "roles/voc_encoders"]
 	path = roles/voc_encoders
 	url = https://github.com/chaos-bodensee/role_voc_encoders.git
+[submodule "roles/i3wm"]
+	path = roles/i3wm
+	url = https://github.com/chaos-bodensee/role-i3wm.git
+[submodule "roles/xrandr"]
+	path = roles/xrandr
+	url = https://github.com/chaos-bodensee/role-xrandr.git
