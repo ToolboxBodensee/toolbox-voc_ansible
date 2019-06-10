@@ -59,6 +59,7 @@ ssh_public_key_store: 'admin_ssh_keys'
 obs_user: toolbox
 username: toolbox
 i3wm_user: toolbox
+copy_to_user: toolbox
 
 # Font for the Toolbox
 fonts_shared:

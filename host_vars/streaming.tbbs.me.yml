@@ -28,14 +28,9 @@ i3_applications:
    on_startup: true
  - application:
    class: "voxtogui"
-   name: "/opt/voctomix/voctogui/voctogui.py"
+   name: "sleep 10; /opt/voctomix/voctogui/voctogui.py"
    workspace: 1 # bind application to a specific workspace
    on_startup: true
-
-
-
-extra_bashrc: 'mkdir ~/.screenlayout ; echo "xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output DVI-1 --mode 1280x1024 --pos 0x0 --rotate left --output DVI-0 --off --output HDMI-0 --mode 1920x1200 --pos 1024x80 --rotate normal
-" > ~/.screenlayout/default.sh ; if xhost >& /dev/null ; then ~/.screenlayout/default.sh" else echo "No display set -> export DISPLAY=:0 " ; fi'
 
 i3_monitors:
   - monitor:
@@ -52,3 +47,7 @@ i3_monitors:
     pos: "1024x80"
     rotate: "normal"
     workspaces: [1,2,3,4,5,6,7,8,9]
+
+
+i3_run_on_startup:
+  - "/home/{{ copy_to_user }}/.config/display-setup.sh"

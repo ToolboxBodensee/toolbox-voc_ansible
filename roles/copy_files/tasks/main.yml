@@ -1,0 +1,9 @@
+---
+
+- name: copy files
+  copy: 
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  with_items:
+    - { src: 'display-setup.sh', dest: "/home/{{ copy_to_user }}/.config/display-setup.sh" }
+
