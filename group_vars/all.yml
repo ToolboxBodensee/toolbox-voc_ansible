@@ -1,7 +1,8 @@
 ---
 # event specific variables:
-room_fahrplan_name: movie-room
-voc_event_acronym: cosin
+room_fahrplan_name: 'movie-room'
+voc_event_acronym: 'cosin'
+encodermode: 'hd-voctomix'
 
 
 # Authentification and user management
