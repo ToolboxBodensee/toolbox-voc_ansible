@@ -8,6 +8,7 @@
    - ssh_authorized_keys
    - ssh-auth
    - sshd
+   - config
   roles:
     - ssh_authorized_keys
     - sshd
@@ -21,6 +22,7 @@
    - base
    - base_packages
    - home_environment
+   - config
   roles:
     - home_environment
     - base_packages
@@ -48,6 +50,7 @@
    - arandr
    - xrandr
    - randr
+   - config
   roles:
     - i3wm
     - xrandr
@@ -61,6 +64,7 @@
    - base-encoder
    - voc_common
    - graphic
+   - config
   roles:
     - voc_common
     - graphic
@@ -79,6 +83,7 @@
   tags: 
    - stream
    - voctomix
+   - config
   roles:
     - voctomix
 
@@ -95,6 +100,7 @@
   tags: 
    - stream
    - obs-setup
+   - config
   roles:
     - toolbox-obs-setup
 
@@ -124,5 +130,6 @@
    - encode
    - encoders
    - encoder
+   - config
   roles:
    - voc_encoders

@@ -20,19 +20,35 @@ blackmagic_sources:
    audio: true
 #   mode: 18  # optional
 
+i3_applications:
+ - application:
+   class: "terminator"
+   name: "terminator"
+   workspace: 0 # bind application to a specific workspace
+   on_startup: true
+ - application:
+   class: "voxtogui"
+   name: "/opt/voctomix/voctogui/voctogui.py"
+   workspace: 1 # bind application to a specific workspace
+   on_startup: true
+
+
+
+extra_bashrc: 'mkdir ~/.screenlayout ; echo "xrandr --output DisplayPort-1 --off --output DisplayPort-0 --off --output DVI-1 --mode 1280x1024 --pos 0x0 --rotate left --output DVI-0 --off --output HDMI-0 --mode 1920x1200 --pos 1024x80 --rotate normal
+" > ~/.screenlayout/default.sh ; if xhost >& /dev/null ; then ~/.screenlayout/default.sh" else echo "No display set -> export DISPLAY=:0 " ; fi'
 
 i3_monitors:
   - monitor:
     id: 1
-    output: "HDMI-0"
-    mode: "1920x1200"
-    pos: "0x0"
-    rotate: "normal"
-    workspaces: [1,2,3,4,5,6,7,8,9]
-  - monitor:
-    id: 2
     output: "DVI-1"
     mode: "1280x1024"
-    pos: "1920x0"
+    pos: "0x0"
     rotate: "left"
     workspaces: [0]
+  - monitor:
+    id: 2
+    output: "HDMI-0"
+    mode: "1920x1200"
+    pos: "1024x80"
+    rotate: "normal"
+    workspaces: [1,2,3,4,5,6,7,8,9]
