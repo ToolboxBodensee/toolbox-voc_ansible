@@ -1,8 +1,13 @@
 ---
+# event specific variables:
+room_fahrplan_name: movie-room
+voc_event_acronym: cosin
+
 
 # Authentification and user management
 # For more information have a look into the sshd and ssh_authorised_keys roles
-
+# You probably don't want to modify these parameters unless you are
+# cloning our setup or add new users
 admins:
   - l3d
 
