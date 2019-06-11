@@ -46,3 +46,6 @@
 [submodule "roles/xrandr"]
 	path = roles/xrandr
 	url = https://github.com/chaos-bodensee/role-xrandr.git
+[submodule "roles/no_sleep"]
+	path = roles/no_sleep
+	url = https://github.com/chaos-bodensee/role_disable_sleep.git

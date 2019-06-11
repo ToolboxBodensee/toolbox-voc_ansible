@@ -56,6 +56,15 @@
     - i3wm
     - xrandr
 
+- name: stay awake
+  hosts: encoder
+  tags:
+    - sleep
+    - awake
+    - suspend
+    - no_sleep
+  roles:
+    - no_sleep
  
 - name: Install video drivers
   hosts: encoder
