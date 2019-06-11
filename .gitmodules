@@ -49,3 +49,6 @@
 [submodule "roles/no_sleep"]
 	path = roles/no_sleep
 	url = https://github.com/chaos-bodensee/role_disable_sleep.git
+[submodule "roles/voc_mixer"]
+	path = roles/voc_mixer
+	url = https://github.com/chaos-bodensee/role_voctogui.git

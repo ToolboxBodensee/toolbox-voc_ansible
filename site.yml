@@ -143,3 +143,4 @@
    - config
   roles:
    - voc_encoders
+   - voc_mixer
