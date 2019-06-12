@@ -52,3 +52,6 @@
 [submodule "roles/voc_mixer"]
 	path = roles/voc_mixer
 	url = https://github.com/chaos-bodensee/role_voctogui.git
+[submodule "roles/voc_tracker"]
+	path = roles/voc_tracker
+	url = https://github.com/chaos-bodensee/role_voc_tracker.git
