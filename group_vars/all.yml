@@ -50,7 +50,6 @@ accounts:
   - raoul
 
 only_allow_ed25519: true
-
 ssh_public_key_store: 'admin_ssh_keys'
 
 

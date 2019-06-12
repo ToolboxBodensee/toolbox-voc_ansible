@@ -1,4 +1,15 @@
 ---
+- name: install python3
+  hosts: all
+  gather_facts: false
+  become: true
+  roles:
+    - install_python
+  tags:
+    - default
+  vars:
+    - ansible_ssh_user: 'ansible'
+
 - name: Apply basic ssh config on all hosts
   hosts: all
   tags: 
