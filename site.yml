@@ -52,7 +52,7 @@
     - install-git-lfs
 
 - name: Install i3wm
-  hosts: encoder
+  hosts: all
   tags: 
    - base
    - os
@@ -141,6 +141,17 @@
   roles:
   - crs-tools
 
+- name: install php for voc tracker
+  hosts: tracker
+  tags:
+   - config
+   - php
+   - tracker
+   - track
+   - traktor
+  roles:
+    - php
+
 - name: install common voc_encoders stuff
   hosts: encoder
   tags:
@@ -162,5 +173,7 @@
    - config
    - pipeline
    - tracker
+   - track
+   - traktor
   roles:
     - voc_tracker

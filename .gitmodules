@@ -55,3 +55,6 @@
 [submodule "roles/voc_tracker"]
 	path = roles/voc_tracker
 	url = https://github.com/chaos-bodensee/role_voc_tracker.git
+[submodule "roles/php"]
+	path = roles/php
+	url = https://github.com/geerlingguy/ansible-role-php.git

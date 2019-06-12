@@ -1,1 +1,19 @@
 ---
+# modify php parameter
+php_default_version_debian: 7.3
+php_packages:
+  - php
+  - php-cli
+  - php-common
+  - php-gd
+  - php-mbstring
+  - php-pdo
+  - php-xml
+  - php-curl
+  - php-intl
+php_enable_webserver: false
+
+# xtra packages
+i3_packages_extra:
+ - ranger
+
