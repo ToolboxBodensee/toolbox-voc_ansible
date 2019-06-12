@@ -3,7 +3,9 @@
 room_fahrplan_name: 'movie-room'
 voc_event_acronym: 'cosin'
 encodermode: 'hd-voctomix'
-
+enable_hd_stream: true
+enable_sd_stream: false
+voc_streaming_endpoint: rtmp://streaming.cosin.ch/live/movieroom?psk=RTrBggXcCvsaryhvUJD775qzOfCkuAl7
 
 # Authentification and user management
 # For more information have a look into the sshd and ssh_authorised_keys roles
