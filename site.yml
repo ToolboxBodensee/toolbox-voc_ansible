@@ -1,7 +1,6 @@
 ---
-
 - name: Apply basic ssh config on all hosts
-  hosts: encoder
+  hosts: all
   tags: 
    - auth
    - ssh
@@ -16,7 +15,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Apply common basic config on all hosts
-  hosts: encoder
+  hosts: all
   tags: 
    - auth
    - base
@@ -31,7 +30,7 @@
     - ansible_ssh_user: 'ansible'
 
 - name: Install useful tools
-  hosts: encoder
+  hosts: all
   tags: 
    - base
    - base-special
@@ -57,7 +56,7 @@
     - xrandr
 
 - name: stay awake
-  hosts: encoder
+  hosts: all
   tags:
     - sleep
     - awake
@@ -115,7 +114,7 @@
     - toolbox-obs-setup
 
 - name: Install Toolbox font
-  hosts: encoder
+  hosts: all
   tags: 
    - font
    - fonts
@@ -124,14 +123,14 @@
     - fonts
  
 - name: Install crs-tools
-  hosts: encoder
+  hosts: all
   tags: 
    - crs
    - crs-tools
   roles:
   - crs-tools
 
-- name: insall common voc_encoders stuff
+- name: install common voc_encoders stuff
   hosts: encoder
   tags:
    - voc
@@ -144,3 +143,13 @@
   roles:
    - voc_encoders
    - voc_mixer
+
+- name: install voc tracker
+  hosts: tracker
+  tags:
+   - voc
+   - config
+   - pipeline
+   - tracker
+  roles:
+    - voc_tracker

@@ -24,4 +24,7 @@ git submodule update --init --recursive
 -------
  + [overview/](https://github.com/ToolboxBodensee/toolbox-voc_ansible/blob/master/overview/README.md)
 
-
+ Questions about this setup?
+------------------------------
+L3D will explain it to you if you invite him to a [Tschunk](https://entropia.de/Tschunk).<br/>
+or ask the awesome c3voc. They developed it! They are awesome!
