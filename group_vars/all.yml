@@ -1,11 +1,30 @@
 ---
 # event specific variables:
+# Please don't forget to change it *bevore* each event!
+
+##  which room is this encoder for
+##  (Maybe you want to overwrite this value in the host_vars)
 room_fahrplan_name: 'movie-room'
+
+##  on which event are you
 voc_event_acronym: 'cosin'
-encodermode: 'hd-voctomix'
+
+##  do we want to stream HD
 enable_hd_stream: true
+
+##  do we want to stream SD
 enable_sd_stream: false
+
+##  where are we streaming to?
+##  please think about using an ansible valut for this value!!!
 voc_streaming_endpoint: rtmp://streaming.cosin.ch/live/movieroom?psk=RTrBggXcCvsaryhvUJD775qzOfCkuAl7
+
+# good values for different playbooks
+# optimized for the setup in the toolbox bodensee - https://toolbox-bodensee.de
+# Please have a look into the roles for more detailed informations
+
+# good voctomix settings
+encodermode: 'hd-voctomix'
 
 # Authentification and user management
 # For more information have a look into the sshd and ssh_authorised_keys roles
@@ -55,14 +74,15 @@ only_allow_ed25519: true
 ssh_public_key_store: 'admin_ssh_keys'
 
 
-# some variables for the voc specific playbooks
-
+# some variables for the self-written voc specific playbooks
 obs_user: toolbox
 username: toolbox
 i3wm_user: toolbox
 copy_to_user: toolbox
 
 # Font for the Toolbox
+# primarly needed for OBS
+# we don't use obs. we just install it, because one person wants it.
 fonts_shared:
   - type: 'truetype'
     src: 'files/Exo_2/Exo2-BlackItalic.ttf'
