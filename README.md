@@ -2,6 +2,8 @@
 ====================================
 Ansible Setup for the VOC *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de).
 
+![Toolbox VOC](.github/toolbox-voc.svg "Toolbox Video Operation Center")
+
 Ansible is a radically simple IT automation engine that automates cloud provisioning, configuration management, application deployment, intra-service orchestration, and many other IT needs. [Weitere Infos](https://de.wikipedia.org/wiki/Ansible) | [Learn more](https://www.ansible.com/overview/how-ansible-works)
 
  Usage:
