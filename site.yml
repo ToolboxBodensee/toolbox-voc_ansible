@@ -31,11 +31,13 @@
    - auth
    - base
    - base_packages
+   - base-packages
+   - packages
    - home_environment
    - config
   roles:
     - home_environment
-    - base_packages
+    - base-packages
     - copy_files
   vars: 
     - ansible_ssh_user: 'ansible'

@@ -1,9 +1,6 @@
 [submodule "roles/ssh_authorized_keys"]
 	path = roles/ssh_authorized_keys
-	url = https://github.com/ffbsee/role-ssh_authorized_keys.git
-[submodule "roles/base_packages"]
-	path = roles/base_packages
-	url = https://gitea.see-base.de/toolbox/role-base_packages.git
+	url = https://github.com/chaos-bodensee/role-ssh_authorized_keys.git
 [submodule "files/admin_ssh_keys"]
 	path = files/admin_ssh_keys
 	url = https://gitea.see-base.de/toolbox/ssh-public-keys.git
@@ -58,3 +55,6 @@
 [submodule "roles/php"]
 	path = roles/php
 	url = https://github.com/geerlingguy/ansible-role-php.git
+[submodule "roles/base-packages"]
+	path = roles/base-packages
+	url = https://github.com/chaos-bodensee/role-base_packages.git

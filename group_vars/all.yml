@@ -4,20 +4,21 @@
 
 ##  which room is this encoder for
 ##  (Maybe you want to overwrite this value in the host_vars)
-room_fahrplan_name: 'movie-room'
+room_fahrplan_name: 'HBK'
 
 ##  on which event are you
-voc_event_acronym: 'cosin'
+voc_event_acronym: 'technikcamp'
 
 ##  do we want to stream HD
-enable_hd_stream: true
+enable_hd_stream: false
 
 ##  do we want to stream SD
 enable_sd_stream: false
 
 ##  where are we streaming to?
 ##  please think about using an ansible valut for this value!!!
-voc_streaming_endpoint: rtmp://streaming.cosin.ch/live/movieroom?psk=RTrBggXcCvsaryhvUJD775qzOfCkuAl7
+use_trailer_for_rtmp: true
+voc_streaming_endpoint: false
 
 # good values for different playbooks
 # optimized for the setup in the toolbox bodensee - https://toolbox-bodensee.de
