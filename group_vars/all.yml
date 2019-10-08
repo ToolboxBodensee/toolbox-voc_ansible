@@ -18,7 +18,7 @@ enable_sd_stream: false
 ##  where are we streaming to?
 ##  please think about using an ansible valut for this value!!!
 use_trailer_for_rtmp: true
-voc_streaming_endpoint: false
+voc_streaming_endpoint: rtmp://live.ber.c3voc.de:1935/stream/q2
 
 # good values for different playbooks
 # optimized for the setup in the toolbox bodensee - https://toolbox-bodensee.de
@@ -142,3 +142,5 @@ fonts_shared:
     src: 'files/Exo_2/Exo2-Thin.ttf'
     dest: 'Exo2-Thin.ttf'
 
+# not needed stuff
+temporarily_disable_screensaver: false
