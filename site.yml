@@ -109,13 +109,13 @@
   roles:
     - voctomix
 
-- name: Install obs-studio
-  hosts: encoder
-  tags: 
-   - stream
-   - obs
-  roles:
-    - obs-studio
+#- name: Install obs-studio
+#  hosts: encoder
+#  tags: 
+#   - stream
+#   - obs
+#  roles:
+#    - obs-studio
 
 - name: Install obs-studio setup
   hosts: encoder
