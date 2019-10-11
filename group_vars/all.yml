@@ -4,13 +4,13 @@
 
 ##  which room is this encoder for
 ##  (Maybe you want to overwrite this value in the host_vars)
-room_fahrplan_name: 'HBK'
+room_fahrplan_name: 'ruum42'
 
 ##  on which event are you
-voc_event_acronym: 'technikcamp'
+voc_event_acronym: 'tdott'
 
 ##  do we want to stream HD
-enable_hd_stream: false
+enable_hd_stream: true
 
 ##  do we want to stream SD
 enable_sd_stream: false
@@ -144,3 +144,5 @@ fonts_shared:
 
 # not needed stuff
 temporarily_disable_screensaver: false
+base_pkg_non_free_firmware: true
+base_pkg_contrib: true
