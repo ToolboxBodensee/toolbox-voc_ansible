@@ -34,6 +34,7 @@ encodermode: 'hd-voctomix'
 admins:
   - raoul
   - l3d
+  - wolf
 
 users:
   l3d:
@@ -53,6 +54,8 @@ users:
    - raoul@ccczh
   raoul:
    - raoul@ccczh
+  wolf:
+   - wolf@rotkaeppchen
 
 sshd_default_allowed_users:
   - toolbox
@@ -60,6 +63,7 @@ sshd_default_allowed_users:
   - l3d
   - ansible
   - raoul
+  - wolf
 
 sshd_default_allowed_groups:
   - toolbox
@@ -67,11 +71,13 @@ sshd_default_allowed_groups:
   - l3d
   - ansible
   - raoul
+  - wolf
 
 accounts:
   - l3d
   - toolbox
   - raoul
+  - wolf
 
 only_allow_ed25519: true
 ssh_public_key_store: 'admin_ssh_keys'
