@@ -1,4 +1,17 @@
 ---
+- name: we are moved
+  hosts: localhost
+  gather_facts: false
+  tags: default
+  tasks:
+    - name: attention, we moved
+      debug:
+        msg: "Please be aware, that this repo is no longer maintained and we're moved to github: https://github.com/chaos-bodensee/voc-setup.git"
+    
+    - name: Fail because moved
+      fail:
+        msg: "please take a look for the current working implementation at https://github.com/chaos-bodensee/voc-setup.git"
+
 - name: install python3
   hosts: all
   gather_facts: false
