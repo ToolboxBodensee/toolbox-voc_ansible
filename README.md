@@ -1,5 +1,8 @@
  Video Streaming - Ansible Setup
 ====================================
+
+**Entwicklung nur auf [GitLab](https://gitlab.com/ToolboxBodensee/streaming/toolbox-voc_ansible). Auf GitHub befindet sich lediglich ein Mirror**
+
 Ansible Setup for the VOC *(Video Operation Center)* from the [Toolbox Bodensee e.V.](https://toolbox-bodensee.de).
 
 ![Toolbox VOC](.github/toolbox-voc.svg "Toolbox Video Operation Center")
